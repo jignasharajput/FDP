@@ -1,0 +1,13 @@
+body
+{
+	background-color: lightgray;
+}
+.service
+{
+	height: 30vh;
+	width: 30%;
+	background-color: blue;
+	float: left;
+	margin: 10px;
+
+}

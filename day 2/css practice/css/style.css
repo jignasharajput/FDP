@@ -1,0 +1,72 @@
+div
+{
+	background-color: blue;
+	width: 20%;
+	height: 50vh;
+	margin: 10px;
+	/*padding: 10px 20px 50px 30px;*/
+	/*margin: 10px;
+	padding: 5px;*/
+	/*border: 2px solid red;*/
+	/*display: inline-block;*/
+	float: left;
+	box-sizing: border-box;
+	/*border-radius: 10px 100px 125px;*/
+	border-left: 2px solid blue;
+	/*background-image: url('../images/img1.jpg');*/
+	/*opacity: 0.3*/;
+	overflow: scroll;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	overflow-wrap: break-word;
+}
+#id1
+{
+	background-color: red;
+}
+.bg-yellow
+{
+	background-color: yellow;
+}
+.w500
+{
+	/*width: 500px;*/
+}
+body
+{
+	margin: 0px;
+	/*background-image: url('../images/img1.jpg');*/
+}
+.bg-image-1
+{
+	background-image: url('../images/img2.jpg');
+
+}
+.bg-image-2
+{
+	background-image: url('../images/img3.jpg');
+
+}
+.bg-image-3
+{
+    background-image: url('../images/img4.jpg');
+}
+.bg-image-4
+{
+	background-image: url('../images/img1.jpg');
+
+}
+/*div:hover
+{
+	background-image:url('../images/img1.jpg');
+	font-size: 20px;
+	font-width: bold;
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-size: 50%;
+    opacity: 1;
+}*/
+.clear
+{
+	clear: both;
+}
