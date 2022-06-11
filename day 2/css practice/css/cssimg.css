@@ -9,5 +9,18 @@ body
 	background-color: blue;
 	float: left;
 	margin: 10px;
+	border-radius: 5px;
+	
 
 }
+.img-service
+{
+	width: 100%;
+
+}
+@media(min-width: 200px) and(max-width: 767px){
+#service .service{
+	width: 90% !important;
+}
+}
+
