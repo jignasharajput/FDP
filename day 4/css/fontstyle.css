@@ -1,0 +1,50 @@
+@font-face
+{
+	src: url('../font/Mainstay.ttf');
+	font-family: myFirstFont;
+
+}
+h1
+{
+	font-family: myFirstFont;
+	/*color:blue;*/
+	 text-shadow: 2px 2px deepskyblue;
+	font-size: 50px;
+
+}
+@font-face
+{
+	src:url('../font/Rosseta Notes.ttf');
+	font-family: second;
+}
+h2
+{
+	font-family: second;
+	/*color:blue;*/
+	 text-shadow: 2px 2px lightgreen;
+	font-size: 50px;
+
+}
+.w30
+{
+	width: 30%;
+	box-sizing: border-box;
+}
+.w70
+{
+	width: 70%;
+box-sizing: border-box;	
+}
+.f1
+{
+	float: left;
+}
+#slider .slider-img .img-slider
+{
+	width: 100%;
+	padding: 20px;
+}
+.img-slider
+{
+	width: 50%;
+}

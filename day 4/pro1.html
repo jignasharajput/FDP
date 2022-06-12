@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title></title>
+	<link rel="stylesheet" href="css/fontstyle.css" type="text/css">
+	<script type="text/javascript">
+		document.write("this is script");
+		document.write("<h1>hello</h1>");
+
+		alert("hello");
+		function myFunction() {
+  let color = prompt("Please enter color");
+  if (color != null) {
+     // document.body.style.backgroundColor = color;
+     document.getElementById("b1").style.backgroundColor = color;
+     
+  }
+}
+ 
+
+		document.getElementById("btn1").addEventListener("click", myFunction() {
+  let color = prompt("Please enter color");
+  if (color != null) {
+     // document.body.style.backgroundColor = color;
+     document.getElementById("b1").style.backgroundColor = color;
+});
+	</script>
+</head>
+<body id="b1">
+	<!-- <h1>hello</h1>
+	<h2>hello silver oak</h2>
+	<button id="show" onclick="document.getElementById('details').innerHTML='this is text';">show</button>
+<button id="hide" onclick="document.getElementById('details').innerHTML='';">Hide</button>
+	
+	<button id="show" onclick="document.getElementById('details').style.fontSize='20px';">A</button>
+<button id="hide" onclick="document.getElementById('details').style.fontSize='30px';">A++</button>
+<button id="hide" onclick="document.getElementById('details').style.fontSize='60px';">A+++</button>	
+
+	<p id="details">hello there</p>
+	 -->
+	 <button id="btn1">click</button>
+<button onclick="myFunction()">Try it</button>
+	 <h3>welcome</h3>
+	 <p id="demo"></p>
+	 <section id="slider">
+	 	<div class="slider-imgs w30 f1">
+	 		<img class="img-slider" src="images/img4.jpg" onclick="document.getElementById('main-img').src='images/img4.jpg'">
+	 		<img class="img-slider" src="images/img2.jpg" onclick="document.getElementById('main-img').src='images/img2.jpg'">
+	 		<img class="img-slider" src="images/img3.jpg" onclick="document.getElementById('main-img').src='images/img3.jpg'">
+	 	</div>
+
+	 	<div class="slider-imgs w30 f1">
+	 		<img id="main-img" class="" src="images/img5.jpg">
+	 	</div>
+	 </section>
+
+</body>
+</html>
