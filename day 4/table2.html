@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function addTable() {
+      
+    var myTableDiv = document.getElementById("myDynamicTable");
+      
+    var table = document.createElement('TABLE');
+    table.border='1';
+    
+    var tableBody = document.createElement('TBODY');
+    table.appendChild(tableBody);
+      
+    for (var i=0; i<4; i++){
+       var tr = document.createElement('TR');
+       tableBody.appendChild(tr);
+       
+       for (var j=0; j<4; j++){
+           var td = document.createElement('TD');
+           td.width='75';
+           td.appendChild(document.createTextNode("Cell " + i + "," + j));
+           tr.appendChild(td);
+           if(i==2 && j==2)
+           {
+             td.style.color="red";
+           }
+       }
+    }
+    myTableDiv.appendChild(table);
+    
+}
+
+	</script>
+</head>
+<body>
+<div id="myDynamicTable">
+<input type="button" id="create" value="Click here" onclick="addTable()">
+to create a Table and add some data using JavaScript
+</div>
+
+</body>
+</html>

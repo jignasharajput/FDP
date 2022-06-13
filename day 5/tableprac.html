@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script type="text/javascript">
+		function drawtable()
+		{
+			var row=prompt("enter the row:");
+			var column=prompt("enter column:");
+			var html="<h1> row :" +row+"</h1>";
+			html+="<h1>column:" +column +"</h1>";
+			html+= "<table border='1'>";
+
+			for(var i=1;i<=row;i++)
+			{   html+= "<tr>";
+				for(var j=1;j<=column;j++)
+				{
+					if(i%2 == 1)
+
+					{
+						if(j%2 == 1)
+						{
+							html += "<td bgcolor='black'> row: " + i +" ;column: " + j +"</td>";
+						}
+						else
+						{
+							html += "<td bgcolor> row: " + i +" ;column: " + j +"</td>";
+
+						}
+					}
+					else
+					{
+
+							if(j%2 == 0)
+						{
+							html += "<td bgcolor='black'> row: " + i +" ;column: " + j +"</td>";
+						}
+						else
+						{
+							html += "<td bgcolor> row: " + i +" ;column: " + j +"</td>";
+
+						}
+					}
+				
+				//html += "<td> row: " + i +" ;column: " + j +"</td>";
+
+			}
+			html += "</tr>";
+
+		}
+		html+= "</table>";
+		//document.write(html);
+		document.getElementById('printtable').innerHTML=html;
+	}
+
+	</script>
+</head>
+<body>
+	<div>
+<button id="btnName"  onclick="drawtable()">click</button>
+to create a Table and add some data using JavaScript
+</div>
+<h1> <span id="printname"></span></h1>
+<section id="printtable"></section>
+</body>
+</html>

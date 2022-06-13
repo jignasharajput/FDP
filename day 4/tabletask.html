@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.hidden {
+  display: none;
+}
+
+.placeholder {
+  font-size: 12px;
+}
+	</style>
+	<script type="text/javascript">
+		var click = document.getElementById('clickme');
+click.addEventListener('click', myfunction);
+
+function myfunction() {
+  var tablewrap = document.getElementById('displaytable');
+  tablewrap.classList.toggle('hidden')
+};
+	</script>
+</head>
+<body>
+	<div id="displaytable" class="placeholder">
+  <table id="displaytable2" width="100%" cellpadding="1" cellspacing="0" border="3">
+    <tr align="center">
+      <td class="lbl">column1</td>
+      <td class="lbl">column2</td>
+      <td class="lbl">column3</td>
+    </tr>
+    <tr>
+      <td align="center">1</td>
+      <td align="center">2</td>
+      <td align="center">33</td>
+    </tr>
+    <tr>
+      <td align="center">4</td>
+      <td align="center">5</td>
+      <td align="center">6</td>
+    </tr>
+  </table>
+</div>
+<div>
+  <input type="button" id="clickme" value="Show/Hide" onclick='myfunction();' />
+</div>
+
+</body>
+</html>
